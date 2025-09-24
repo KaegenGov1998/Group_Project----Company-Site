@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(211, 236, 236);
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+header {
+  width: 100%;
+  text-align: center;
+  height: 5em;
+  background-color: antiquewhite;
+  border-bottom: rgb(14, 2, 2);
+}
+
+/* Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: beige;
+  padding: 0em 1em 0em 1em;
+}
+
+.top-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 2em;
+  height: 20%;
+}
+
+.panels {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 4;
+  gap: 20px 20px;
+  width: 100%;
+  background-color: rgb(217, 192, 241);
+
+}
+/* panel content  */
+.panel1,
+.panel2,
+.panel3 {
+  background-color: rgb(198, 226, 241);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5%;
+  height: 100%;
+  padding: 2em;
+  margin: 0em 2em 0em 2em;
+}
+
+.thumbnail img{
+
+}
+
+.member-name{
+  margin: 1em;
+}
+
+/* Footer */
+
+footer {
+  height: 10vh;
+}
+
+.member-skills {
+  align-self: flex-start;
+  padding: 1em;
+}
+
+.member-hobbies{
+  align-self: flex-start;
+  padding: 1em;
+}
+
+/* Media Query Portrait Mode */
+
+@media screen and (max-width:860px) {
+
+  header{
+    padding: 5vh;
+  }
+
+  footer{
+    padding: 5vh; 
+  }
+
+  .panels {
+    flex-direction: column;
+  }
+
+  .panel1,
+  .panel2,
+  .panel3 {
+    width: 100%;
+  }
+
+
+
+}
