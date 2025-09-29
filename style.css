@@ -55,8 +55,8 @@ header .slogan {
 }
 
 .member img {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -82,9 +82,14 @@ a {
   color: inherit;
 }
 
-.member-panel:hover{
+.member-panel {
+  transition-duration: 0.5s;
+}
+
+.member-panel:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-} 
+  transition-duration: 0.5s;
+}
 
 /* Footer */
 footer {
@@ -119,6 +124,7 @@ footer {
 .top-content img {
   border-radius: 50%;
   height: 200px;
+  width: 200px;
 }
 
 .top-content h2 {
@@ -135,6 +141,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   flex: 1;
+  align-content: center;
   text-align: center;
 }
 
@@ -185,10 +192,14 @@ footer {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s;
 }
 
 .back-button a:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  background-color: #2980b9;
+  color: white;
+  transition-duration: 0.5s;
 }
 
 @media screen and (orientation: portrait) {
